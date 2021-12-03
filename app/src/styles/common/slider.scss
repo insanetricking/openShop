@@ -1,0 +1,87 @@
+.slider {
+    height: 100vh;
+
+    &__inner {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    &__line {
+        display: flex;
+        width: 100%;
+        transition: all ease 1s;
+    }
+
+
+    &__slide {
+        display: flex;
+
+    }
+
+
+    &__img {
+        display: block;
+        max-width: 740px;
+        width: 100%;
+    }
+
+    &__description {
+        margin-left: -60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: $grey;
+        letter-spacing: 0.05em;
+        font-family: 'NotoSans';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 70px;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+
+    &__btn {
+        display: block;
+        padding: 12px 46px;
+        background: $grey;
+        color: $white;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: 'NotoSans';
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+
+    &__pagination {
+        position: absolute;
+        max-width: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 36px;
+        left: 50%;
+    }
+
+    &__round {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ABABAB;
+
+        &.active {
+            background: #313131;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

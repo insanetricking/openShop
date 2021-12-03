@@ -1,0 +1,45 @@
+$white: #FFFFFF;
+$black:  #000000;
+$grey:  #313131;
+$lightGrey: #C4C4C4;
+
+
+$fonts: ('NotoSans', 'Regular', 400),
+        ('NotoSans', 'Light', 300),
+        ('NotoSans', 'Medium', 500),
+        ('NotoSans', 'SemiBold', 600);
+        
+@each $name,$type,$weight in $fonts{
+    @font-face{
+        font-family:$name;
+        src: url('../fonts/#{$name}-#{$type}.ttf');
+        font-weight: $weight;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: $white;
+
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 15px;
+    width: 100%; 
+}
+
+
+img{
+    display: block;
+    width: 100%;
+}
