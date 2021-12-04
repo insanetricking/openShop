@@ -60,4 +60,25 @@ img {
     letter-spacing: 0.05em;
     font-family: 'NotoSans';
     font-weight: 400;
+    outline: none;
+        border: none;
+
+    &-buy {
+        opacity: 0;
+        font-size: 14px;
+        line-height: 19px;
+        font-family: 'NotoSans';
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 35px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        background:$grey;
+        color: $white;
+        outline: none;
+        border: none;
+        transition: all ease 0.4s;
+
+    }
 }
