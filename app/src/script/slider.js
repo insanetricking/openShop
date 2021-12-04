@@ -151,7 +151,6 @@ class Slider {
                 this.sliderLine.style.transform = `translateX(-${this.count * this.width}px)`;
 
             }
-            console.log(this.count);
             this.sliderRounds[this.count].classList.add('active');
             this.sliderLine.style.transform = `translateX(-${this.count * this.width}px)`;
 
