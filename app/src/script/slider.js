@@ -1,4 +1,5 @@
 
+
 class Slider {
     constructor() {
         this.sliderInner = document.querySelector('.slider__inner');
@@ -29,9 +30,7 @@ class Slider {
 
         //////////////////////// Interval//////////////////////////
 
-        this.intervalId = setInterval(() => {
-            this.autoClick();
-        }, 3000);
+        this.intervalId = this.interval(); 
 
 
         this.sliderPagination.addEventListener('mouseover', () => {
@@ -64,6 +63,7 @@ class Slider {
         this.sliderLine.style.width = this.width * this.sliderSlides.length + 'px';
 
         this.sliderSlides.forEach(item => {
+            
             item.style.width = this.width + 'px';
             item.style.height = 'auto';
 
@@ -164,6 +164,17 @@ class Slider {
 
         this.x1 = null;
         this.y1 = null;
+        
+        this.intervalId = this.interval();
+    }
+
+
+    interval(){
+      let id = setInterval(() => {
+            this.autoClick();
+        }, 3000);
+
+        return id;
     }
 }
 
