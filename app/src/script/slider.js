@@ -1,5 +1,4 @@
 
-
 class Slider {
     constructor() {
         this.sliderInner = document.querySelector('.slider__inner');
