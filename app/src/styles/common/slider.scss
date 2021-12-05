@@ -69,7 +69,7 @@
         justify-content: space-between;
         align-items: center;
         bottom: 36px;
-        left: 50%;
+        left: 40%;
     }
 
     &__round {
@@ -86,27 +86,3 @@
     }
 }
 
-@media (max-width: 500px){
-
-    .slider__description{
-        margin-left: unset;
-    }
-    .slider__img{
-        width: 60%;
-    }
-    .slider__slide{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .slider .container{
-        padding: 0;
-    }
-
-    .select__list{
-        display: none;
-    }
-    .search{
-        display: none;
-    }
-}
