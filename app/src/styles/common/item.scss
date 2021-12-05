@@ -89,7 +89,7 @@
     &__list {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
 
         &-item {
             padding-left: 22px;
@@ -118,6 +118,22 @@
         line-height: 25px;
         letter-spacing: 0.05em;
         color: $black;
+    }
+
+    &__btns{
+        display: flex;
+
+        & :nth-child(1){
+
+            position: relative;
+            padding-left: 65px;
+            &::before{
+                content: url('../images/cart.svg');
+                position: absolute;
+                top: 17px;
+                left: 55px;
+            }
+        }
     }
 
     &__btn {
