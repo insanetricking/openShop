@@ -45,7 +45,9 @@
         }
     }
 
-
+    .tape__line{
+        display: none;
+    }
 
 }
 
@@ -76,7 +78,7 @@
     }
 
     .footer__lastList {
-        // flex-direction: column;
+        
 
 
 
@@ -91,6 +93,14 @@
 
             }
         }
+    }
+
+    .tape__title{
+        font-size: 26px;
+    }
+
+    .tape__description{
+        font-size: 13px;
     }
 }
 
@@ -123,6 +133,27 @@
 
 
 }
+
+@media (max-width: 915px){
+    
+    .tape__btn{
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+    .tape__title{
+        font-size: 26px;
+        line-height: 30px;
+        margin-right: 40px;
+    }
+
+    .tape__description{
+        font-size: 12px;
+        line-height: 25px;
+        max-width: 300px;
+    }
+}
+
+
 
 @media (max-width: 750px) {
     .search__inner {
@@ -196,6 +227,13 @@
         font-size: 13px;
         padding: 5px 10px;
     }
+
+    .tape__box{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
 }
 
 
@@ -237,12 +275,43 @@
     .footer__midList-item {
         margin: 0;
     }
+
+    .tape__title{
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .tape__description{
+        font-size: 10px;
+        line-height: 25px;
+        max-width: 300px;
+    }
 }
 
 @media (max-width:520px) {
 
     .grid__wrapper {
         grid-template-rows: repeat(4, 370px);
+    }
+
+    .tape__title{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .tape__description{
+        font-size: 9px;
+        line-height: 20px;
+        max-width: 200px;
+        text-align: right;
+        
+       
+    }
+
+    .tape__btn{
+        font-size: 8px;
+        padding: 2px 5px;
+        line-height: 18px;
     }
 }
 
