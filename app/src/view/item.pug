@@ -2,11 +2,17 @@ section.item
     .container 
         .item__inner 
             .item__left 
-                .item__box 
-                    img.item__miniImg(src="./images/showIP1.webp", alt="")
-                    img.item__miniImg(src="./images/showIP2.webp", alt="")
-                    img.item__miniImg(src="./images/showIP3.webp", alt="")
-                img.item__mainImg(src="./images/showIPmain.webp", alt="")
+                .item__box
+                    .item__box-item.active 
+                        img.item__miniImg(src="./images/showIP1.webp", alt="")
+                    .item__box-item 
+                        img.item__miniImg(src="./images/showIP2.webp", alt="")
+                    .item__box-item     
+                        img.item__miniImg(src="./images/showIP3.webp", alt="")
+                .item__frame        
+                    img.item__mainImg.active(src="./images/showIPmain.webp", alt="")
+                    img.item__mainImg(src="./images/showIP2.webp", alt="")
+                    img.item__mainImg(src="./images/showIP3.webp", alt="")
             .item__right 
                 h2.item__title Apple iPhone 12 Pro Max 128GB (Gray)
                 p.item__prise 1300$
@@ -29,8 +35,8 @@ section.item
                     li.item__list-item 
                         p.item__description The shipment for this product will begin from 14th November 2020
                 .item__btns 
-                    button.btn.btn__cart CART        
-                    button.btn.btn__buyNow BUY NOW         
+                    button.btn.item__btn CART        
+                    button.btn.item__btn BUY NOW         
 
                     
 
